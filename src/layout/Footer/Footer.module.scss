@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--layout);
+  margin-top: auto;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  overflow: hidden;
+  transition: 1s;
+}
+.arrowIcon {
+    width: 5rem;
+}
+
+.arrowIcon > path {
+  transition: 0.7s;
+}
+
+.footer:hover {
+  height: 8rem;
+
+  .arrowIcon > path {
+    transform: rotate(180deg);
+    transform-origin: center center;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

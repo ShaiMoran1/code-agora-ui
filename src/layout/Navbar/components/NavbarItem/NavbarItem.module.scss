@@ -1,0 +1,22 @@
+.navbarItemContainer,
+.navbarCreateItemContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+
+  .navbarItemTitle {
+    transition: 0.5s;
+  }
+}
+
+.navbarItemContainer:hover {
+  background-color: var(--primary);
+
+  .navbarItemTitle {
+    transform: scale(1.2);
+  }
+}
